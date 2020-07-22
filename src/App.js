@@ -162,7 +162,7 @@ closeView = () => this.setState({openModalView:false})
            
             <Grid.Row>
             <label style={{padding:20}} for="upload-rct" class="ui icon button">
-              <i class="upload icon"></i>
+             
               Upload Receipt
             </label>
             <input type="file" accept="application/pdf" onChange={ e => this.loadReceipt(e)} id="upload-rct" style={{display: "none"}}/>
@@ -201,7 +201,7 @@ closeView = () => this.setState({openModalView:false})
       <Grid.Column>
         <Segment>
 		<label attached='bottom' htmlFor="hidden-new-file" class="ui icon button" >
-              <i class="key icon"></i>
+             
               Log In
 
             </label>
@@ -245,7 +245,7 @@ closeView = () => this.setState({openModalView:false})
           </Modal.Content>
           <Modal.Actions>
             <Button onClick={() => this.setState({openModalTx:false, fee:'' , transaction:'', rctData:''})} negative>Cancel</Button>
-            <Button onClick={this.confirmUploadReceipt} positive icon='checkmark' labelPosition='right' content='Upload Receipt' />
+            <Button onClick={this.confirmUploadReceipt}  positive>Upload</Button>
           </Modal.Actions>
         </Modal>
 
